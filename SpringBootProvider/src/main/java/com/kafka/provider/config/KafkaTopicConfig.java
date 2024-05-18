@@ -26,7 +26,7 @@ public class KafkaTopicConfig {
         // tamanio maximo de cada mensaje - defecto (1MB)
         configuration.put(TopicConfig.MAX_MESSAGE_BYTES_CONFIG, "1000012");
 
-        return TopicBuilder.name("manzo-Dev")
+        return TopicBuilder.name("channel-dev-topic")
                 .partitions(2)
                 .replicas(2)
                 .configs(configuration)
